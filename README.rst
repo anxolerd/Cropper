@@ -17,8 +17,9 @@ Install all dependencies using dart's ``pub`` utility:
 Usage
 =====
 
-Currently pathes are hardcoded into project thus you have to do the following:
+.. code-block:: bash
 
-1. Copy your pano to ``pano.jpg``
-2. Run ``dart bin/cropper.dart``
-3. Grab results in ``pano-*.jpg`` files
+    dart bin/cropper.dart /path/to/pano.jpg
+
+Results will be written to ``/path/to/pano.part.jpg`` files, where ``part`` is 
+the zero-based index of slice.
